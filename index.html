@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ===== NAVBAR ===== -->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
             <div class="logo">CODESCAPE</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" class="nav-item">Home</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#blog" class="nav-item">Blog</a></li>
+                <li><a href="#careers" class="nav-item">Careers</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
+            <div class="hamburger">&#9776;</div>
         </nav>
     </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
         <h1>Engineering Digital Excellence</h1>
         <p>Where Creativity Meets Technology</p>
         <button class="primary-btn">Get Started</button>
     </section>
 
-    <!-- ===== SERVICES ===== -->
+    <!-- SERVICES -->
     <section class="services" id="services">
         <h2>Our Services</h2>
-        <div class="service-cards">
+        <div class="service-cards reveal">
             <div class="card">
                 <h3>Web Development</h3>
                 <p>Scalable and modern web applications built with engineering precision.</p>
@@ -48,9 +51,9 @@
         </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ABOUT -->
     <section class="about-preview" id="about">
-        <div class="about-container">
+        <div class="about-container reveal">
             <h2>About CODESCAPE</h2>
             <p>
                 CODESCAPE is an engineering-first technology partner delivering
@@ -61,10 +64,10 @@
         </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
         <h2>Featured Projects</h2>
-        <div class="project-grid">
+        <div class="project-grid reveal">
             <div class="project-card">
                 <h3>Project Nova</h3>
                 <p>AI-powered analytics dashboard for enterprise workflow optimization.</p>
@@ -80,36 +83,52 @@
         </div>
     </section>
 
-    <!-- ===== TESTIMONIALS ===== -->
+    <!-- TESTIMONIALS -->
     <section class="testimonials" id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial-card">
-                <p>
-                    "CODESCAPE transformed our digital infrastructure.
-                    Their technical expertise and professionalism exceeded expectations."
-                </p>
-                <h4>- Sarah Johnson, CEO TechNova</h4>
-            </div>
-            <div class="testimonial-card">
-                <p>
-                    "Highly reliable team with strong engineering knowledge.
-                    Delivered our product ahead of schedule."
-                </p>
-                <h4>- Arjun Mehta, Startup Founder</h4>
+        <div class="testimonial-wrapper reveal">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container testimonial-wrapper-inner">
+                <div class="testimonial-card">
+                    <p>"CODESCAPE transformed our digital infrastructure.
+                    Their technical expertise and professionalism exceeded expectations."</p>
+                    <h4>- Sarah Johnson, CEO TechNova</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Highly reliable team with strong engineering knowledge.
+                    Delivered our product ahead of schedule."</p>
+                    <h4>- Arjun Mehta, Startup Founder</h4>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CTA ===== -->
-    <section class="cta" id="contact">
-        <h2>Let’s Build Something Exceptional Together</h2>
-        <p>Your Success is Our Mission.</p>
-        <button class="primary-btn">Contact Us</button>
+    <!-- STATS COUNTERS -->
+    <section class="stats reveal">
+        <div class="stat-card">
+            <h3 data-target="120">0</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-card">
+            <h3 data-target="85">0</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat-card">
+            <h3 data-target="10">0</h3>
+            <p>Years of Experience</p>
+        </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
+    <!-- CTA -->
+    <section class="cta" id="contact">
+        <div class="cta-container reveal">
+            <h2>Let’s Build Something Exceptional Together</h2>
+            <p>Your Success is Our Mission.</p>
+            <button class="primary-btn">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal">
         <div class="footer-container">
             <div class="footer-column">
                 <h3>CODESCAPE</h3>
@@ -121,7 +140,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Careers</a></li>
+                    <li><a href="#careers">Careers</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -142,7 +161,8 @@
         </div>
     </footer>
 
-    <!-- ===== JS ===== -->
     <script src="script.js"></script>
 </body>
 </html>
+
+
