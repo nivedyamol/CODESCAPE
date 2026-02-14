@@ -190,3 +190,64 @@ section h2 {
     section h2 { font-size: 32px; }
     .card, .project-card, .testimonial-card { width: 90%; margin-bottom: 20px; }
 }
+.clients {
+    padding: 80px 20px;
+    background-color: #111827;
+    text-align: center;
+}
+.client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.client-logos img {
+    width: 150px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.client-logos img:hover { opacity: 1; transform: scale(1.1); }
+
+
+
+.team {
+    padding: 80px 20px;
+    background-color: #0f172a;
+    text-align: center;
+}
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.team-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+.team-card img {
+    border-radius: 50%;
+    width: 120px;
+    margin-bottom: 15px;
+}
+.team-card:hover { transform: translateY(-10px); }
+.team-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+#blog { padding: 80px 20px; background-color: #111827; text-align: center; }
+.blog-cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+.blog-card { background: #1e293b; padding: 30px; border-radius: 10px; width: 300px; transition: transform 0.3s ease; }
+.blog-card:hover { transform: translateY(-10px); }
+
+#careers { padding: 80px 20px; background-color: #0f172a; text-align: center; }
+.career-cards { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.career-card { background: #1e293b; padding: 30px; width: 300px; border-radius: 10px; transition: transform 0.3s ease; }
+.career-card:hover { transform: translateY(-10px); }
