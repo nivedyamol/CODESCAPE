@@ -27,6 +27,23 @@ The website follows a modern dark-themed design system emphasizing:
 - Professional typography
 - Structured information flow
 
+- ## 💡 What I Learned
+- Responsive design using media queries
+- Flexbox layouts
+- DOM manipulation
+- Scroll events in JavaScript
+- Git & GitHub basics
+
+## 📌 Future Improvements
+- Contact form integration
+- Backend integration
+- Animations
+- Deployment on Netlify
+
+---
+
+Made with ❤️ by Nivedyamol A R
+
 ## Future Enhancements
 - Blog system integration
 - Analytics tracking integration
