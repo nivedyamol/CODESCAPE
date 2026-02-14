@@ -77,3 +77,24 @@ scrollBtn.addEventListener("click", ()=> window.scrollTo({top:0,behavior:"smooth
 window.addEventListener("scroll", ()=> {
     scrollBtn.style.display = window.scrollY>300?"block":"none";
 });
+// Navbar scroll effect
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector("nav");
+  if (window.scrollY > 50) {
+      navbar.style.backgroundColor = "#111827";
+      navbar.style.boxShadow = "0 4px 6px rgba(0,0,0,0.3)";
+  } else {
+      navbar.style.backgroundColor = "transparent";
+      navbar.style.boxShadow = "none";
+  }
+});
+
+// Smooth scroll for nav links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+      if(link.hash) {
+          e.preventDefault();
+          document.querySelector(link.hash).scrollIntoView({ behavior: 'smooth' });
+      }
+  });
+});
